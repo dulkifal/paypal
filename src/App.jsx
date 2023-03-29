@@ -14,7 +14,7 @@ function App() {
         alt="How to be Great at Anything (Book Cover)"
       />
       <p>
-        <span className="book-price">$13.99</span>
+        <span className="book-price">$10.00</span>
       </p>
       <PayPalScriptProvider
         options={{ "client-id": import.meta.env.VITE_CLIENT_ID }}
@@ -26,7 +26,7 @@ function App() {
               purchase_units: [
                 {
                   amount: {
-                    value: "13.99",
+                    value: "10.00",
                   },
                 },
               ],
