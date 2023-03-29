@@ -1,5 +1,5 @@
 # react-ebook-basic
-An Example React App for Selling an E-Book Online
+An Example React App for PayPal  Online
 
 
 ## Setup
