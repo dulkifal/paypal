@@ -18,13 +18,13 @@ function App() {
     {
       id: 3,
       name: "Apple iPhone 12 Pro Max 512GB - Pacific Blue",
-      price: 250,
+      price: 400,
       image: "/phone.jpeg",
     },
     {
       id: 4,
       name: "Apple Watch Series 6 (GPS, 44mm) - Space Grey Aluminium Case with Black Sport Band",
-      price: 100,
+      price: 250,
       image: "/watch.jpeg",
     },
     {
@@ -32,13 +32,19 @@ function App() {
       name: "Apple AirPods Pro",
       price: 50,
       image: "/airpods.jpeg",
+    },
+    {
+      id: 6,
+      name: "samsung galaxy s21 ultra",
+      price: 650,
+      image: "/samsung.jpeg",
     }
 
   ];
 
   return (
     <div className="App-body">
-      <h1> Special offers Hurrey up</h1>
+      <h1> Special offers </h1>
 
       <div className="rows">
       {produts.map((product) => (
