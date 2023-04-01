@@ -53,10 +53,13 @@ function App() {
             <p>
               <span className="book-price">${product.price}</span>
             </p>
+           
+          
             <PayPalScriptProvider
               options={{ "client-id": import.meta.env.VITE_CLIENT_ID }}
             >
               <PayPalButtons
+                style={{ layout: "horizontal" }}
                 createOrder={(data, actions) => {
                   return actions.order.create({
                     purchase_units: [
@@ -75,6 +78,8 @@ function App() {
                 }}
               />
             </PayPalScriptProvider>
+            
+
           </div>
       ))}
       </div>
