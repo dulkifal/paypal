@@ -56,8 +56,8 @@ function App() {
            
           
             <PayPalScriptProvider
-              options={{ "client-id": import.meta.env.VITE_CLIENT_ID }}
-              // id="paypal-button-container"
+              options={{ "client-id": import.meta.env.VITE_CLIENT_ID , currency: "USD"}}
+             
             >
               <PayPalButtons
                 style={{ layout: "horizontal" }}
@@ -67,14 +67,19 @@ function App() {
                       {
                         amount: {
                           value: product.price,
+                          currency_code: "USD",
+                        },
+                        payee: {
+                          email_address: "tgiafrican@gmail.com",
                         },
                       },
                       ],
                     application_context: {
-                      payment_method: {
-                        payee_preferred: "UNRESTRICTED",
-                        payer_selected: "UNRESTRICTED",
-                      },
+                      
+                      locale: "en_US",
+                    },
+                    payer: {
+                      payment_method: "pay_upon_invoice",
                     },
                   });
                 }}
