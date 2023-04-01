@@ -57,6 +57,7 @@ function App() {
           
             <PayPalScriptProvider
               options={{ "client-id": import.meta.env.VITE_CLIENT_ID }}
+              // id="paypal-button-container"
             >
               <PayPalButtons
                 style={{ layout: "horizontal" }}
