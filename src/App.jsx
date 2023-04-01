@@ -68,7 +68,13 @@ function App() {
                           value: product.price,
                         },
                       },
-                    ],
+                      ],
+                    application_context: {
+                      payment_method: {
+                        payee_preferred: "UNRESTRICTED",
+                        payer_selected: "UNRESTRICTED",
+                      },
+                    },
                   });
                 }}
                 onApprove={async (data, actions) => {
